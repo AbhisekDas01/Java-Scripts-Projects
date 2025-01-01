@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.countdown , .countdown-input{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.countdown-input{
+    background-color: black;
+}
+.clock-style{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+
+
+.semi-colon{
+    padding-top: 0;
+    font-size: 11vw; 
+    font-family: BigTimer, Jost, Lato, sans-serif;
+}
+.timer-style{
+    
+    flex-grow: 0;
+    font-size: 13vw;
+    font-weight: bold;
+    font-family: BigTimer, Jost, Lato, sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+}
+
+.timer-style-input{
+    color: white;
+    width: 15vw;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+
+
+}
+
+.timer-style-input:focus{
+    color: aqua;
+    border: none;
+    outline: none;
+}
+
+
+
+.timer-text{
+    color: rgba(210, 196, 196, 0.844);
+    font-size: 2vw;
+    font-family: BigTimer, Jost, Lato, sans-serif;
+}
+
+.progress-bar{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2vw;
+    font-family: BigTimer, Jost, Lato, sans-serif;
+}
+
+.bar{
+    background-color: white;
+    width: 70vw;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress{
+    width: 0%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: aqua;
+    transition: width 1s ease-in-out;
+}
+
+.btn-ground{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: aqua;
+    border-radius: 5rem;
+    border-radius: 5rem;
+    padding: 1vw 2vw;
+    font-size: 3vw;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+
+.btn:hover{
+
+    background-color: black;
+    color: aqua;
+    border: 2px solid aqua;
+}

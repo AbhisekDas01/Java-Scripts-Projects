@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDown Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="countdown" style="display: none;">
+
+            <!-- days section  -->
+            <div  class = "clock-style">
+                <span id="days" class = "timer-style">00</span>
+                <span class="timer-text">days</span>
+            </div>
+            
+            <!-- separation -->
+            <div class="semi-colon">:</div>
+            
+            <!-- hours section  -->
+            <div class = "clock-style">
+                <span id="hours"  class = "timer-style">00</span>
+                <span class="timer-text">hours</span>
+            </div>
+
+            <!-- separation -->
+            <div class="semi-colon">:</div>
+
+            <!-- minutes section  -->
+            <div  class = "clock-style">
+                <span id="mins" class = "timer-style">00</span>
+                <span class="timer-text">minutes</span>
+            </div>
+
+            <!-- separation -->
+            <div class="semi-colon">:</div>
+
+            <!-- seconds section  -->
+            <div  class = "clock-style">
+                <span id="seconds"  class = "timer-style">00</span>
+                <span class="timer-text">seconds</span>
+            </div>
+        </div> 
+
+        </div>
+
+        
+
+
+         <!-- input field  -->
+         <div class="countdown-input">
+
+            <!-- days section  -->
+            <div  class = "clock-style">
+                <input type="number" name="days-input" id="days-input" placeholder="00" class="timer-style timer-style-input">
+                <span class="timer-text">days</span>
+            </div>
+            
+            <!-- separation -->
+            <div class="semi-colon">:</div>
+            
+            <!-- hours section  -->
+            <div class = "clock-style">
+                <input type="number" name="hours-input" id="hours-input" placeholder="00" class="timer-style timer-style-input">
+                <span class="timer-text">hours</span>
+            </div>
+
+            <!-- separation -->
+            <div class="semi-colon">:</div>
+
+            <!-- minutes section  -->
+            <div  class = "clock-style">
+                <input type="number" name="minutes-input" id="minutes-input" placeholder="00" class="timer-style timer-style-input">
+                <span class="timer-text">minutes</span>
+            </div>
+
+            <!-- separation -->
+            <div class="semi-colon">:</div>
+
+            <!-- seconds section  -->
+            <div  class = "clock-style">
+                <input type="number" name="seconds-input" id="seconds-input" placeholder="00" class="timer-style timer-style-input">
+                <span class="timer-text">seconds</span>
+            </div>
+
+             <!-- btn btn-ground -->
+        
+        </div> 
+
+        <!-- progress bar -->
+        <div class="progress-bar">
+            <span>Progress: </span>
+            <div class="bar">
+                <div class="progress"></div>
+        </div>
+       
+
+       
+        
+    </div>
+
+    <div class="btn-ground">
+        <button id = "start-stop" class="btn">start</button>
+        <button id="reset" type="reset" class = "btn">reset</button>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
