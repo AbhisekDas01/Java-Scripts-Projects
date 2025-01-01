@@ -24,6 +24,10 @@ startStopBtn.addEventListener('click', () => {
 
     // startStopBtn.innerHTML = "stop";
 
+    //update html content
+    startStopBtn.style.display = "none";
+    document.getElementById("reset").style.display = "block";
+    
     document.querySelector(".countdown-input").style.display = "none";
     document.querySelector(".countdown").style.display = "flex";
 
@@ -110,7 +114,8 @@ resetBtn.addEventListener('click' , () =>{
     document.getElementById('seconds').innerHTML = '00';
 
     
-
+    startStopBtn.style.display = "block";
+    document.getElementById("reset").style.display = "none";
     document.querySelector(".countdown").style.display = "none";
     document.querySelector(".countdown-input").style.display = "flex";
 
