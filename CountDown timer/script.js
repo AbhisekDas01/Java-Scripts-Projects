@@ -93,10 +93,14 @@ resetBtn.addEventListener('click' , () =>{
     clearInterval(x);
     document.querySelector('.progress').style.width = "0%";
 
-    document.getElementById("days-input").value = '00';
-    document.getElementById("hours-input").value = '00';
-    document.getElementById("minutes-input").value = '00';
-    document.getElementById("seconds-input").value = '00';
+    // document.getElementById("days-input").placeholder = '00';
+    document.getElementById("days-input").value = '';
+    // document.getElementById("hours-input").placeholder = '00';
+    document.getElementById("hours-input").value = '';
+    // document.getElementById("minutes-input").placeholder = '00';
+    document.getElementById("minutes-input").value = '';
+    // document.getElementById("seconds-input").placeholder = '00';
+    document.getElementById("seconds-input").value = '';
 
     
     document.querySelector(".countdown").innerHTML = originalContent;
