@@ -12,4 +12,6 @@ This repository contains a collection of small JavaScript projects. Each project
 
 ## Getting Started
 
-To get started with any of the projects, clone the repository and navigate to the project directory:
+To get started with any of the projects, clone the repository and navigate to the project directory.
+
+You can also view the projects live [here](https://abhisekdas01.github.io/Java-Scripts-Projects/).
