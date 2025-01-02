@@ -128,6 +128,7 @@ body{
 }
 
 .progress-ring__circle-right{
+    cursor: pointer;
     stroke-dasharray: 453;
     stroke-dashoffset: 453;
     stroke-linecap: round;
@@ -135,16 +136,19 @@ body{
 }
 
 .progress-ring-easy{
+    cursor: pointer;
     stroke-dasharray: 314;
     stroke-dashoffset: 314;
 }
 
 .progress-ring-medium{
+    cursor: pointer;
     stroke-dasharray: 314;
     stroke-dashoffset: 314;
 }
 
 .progress-ring-hard{
+    cursor: pointer;
     stroke-dasharray: 314;
     stroke-dashoffset: 314;
 }
@@ -187,9 +191,14 @@ body{
     align-items: center;
     box-shadow: 1px 1px 3px 1px #bfc6e0b3,
                 -1px -1px 3px 1px #bfc6e0b3;
+    transition: transform 0.3s ease;
+    cursor: pointer;
     
 }
 
+.cards:hover{
+    transform: scale(1.02);
+}
 .easy{
     background-color: green;
 }
