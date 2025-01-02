@@ -2,6 +2,11 @@
 
 This repository contains a collection of small JavaScript projects. Each project is designed to demonstrate different aspects of JavaScript programming and web development.
 
+
+## Visit all projects
+You can also view the projects live [here](https://abhisekdas01.github.io/Java-Scripts-Projects/).
+
+
 ## Projects
 
 1. **Project 1: Countdown Timer**
@@ -14,4 +19,4 @@ This repository contains a collection of small JavaScript projects. Each project
 
 To get started with any of the projects, clone the repository and navigate to the project directory.
 
-You can also view the projects live [here](https://abhisekdas01.github.io/Java-Scripts-Projects/).
+
