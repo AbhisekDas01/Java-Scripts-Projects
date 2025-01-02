@@ -1,32 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LeetCode User Stats</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     
     <div class="container input-container">
-         <!-- search section  -->
-         <div class="inputField">
-            <input type="text" placeholder="LeetCode UserName" id="UserName" >
+        <!-- search section  -->
+        <div class="inputField">
+            <input type="text" placeholder="LeetCode UserName" id="UserName">
             <button id="search-btn">Search</button>
         </div>
     </div>
+
+    <!-- 2nd part  -->
     <div class="container absolute-ctn">
-       
 
-        <!-- stats circle section -->
-         <div class="circle-main-container">
-
-            <div class="right-circle">
-                
+        <header class="name">
+            <div class="name-display">
+                <h1>UserName</h1>
             </div>
-         </div>
+        </header>
+        <!-- stats circle section -->
+        <div class="circle-main-container">
+
+            <div class="right-circle-container">
+
+                <div class="progress-right">
+
+
+                    <svg class="progress-ring" width="150" height="150">
+
+                        <circle class="progress-ring__background" stroke="#a785ac" stroke-width="5" fill="transparent"
+                            r="72" cx="75" cy="75" />
+                        <circle class="progress-ring__circle-right" stroke="#d500f9" stroke-width="5" fill="transparent"
+                            r="72" cx="75" cy="75" style="transform: rotate(-90deg); transform-origin: 50% 50%;" />
+
+                        <text x="50%" y="50%" text-anchor="middle" class="progress-text">
+                            <tspan x="50%" dy="-0.3em" id="percantage">0%</tspan> <!-- First line -->
+                            <tspan x="50%" dy="1.2em" id="Acc">Acceptance</tspan> <!-- Second line -->
+                        </text>
+
+                    </svg>
+                </div>
+
+
+            </div>
+
+            <div class="left-circle-container">
+
+                <!-- easy -->
+                <div class="progress-left">
+                    <svg class="progress-ring" width="120" height="120">
+
+                        <circle class="progress-ring-easy-back" stroke="#68b8b9" stroke-width="5" fill="transparent"
+                            r="50" cx="60" cy="60" />
+                        <circle class="progress-ring-easy" stroke="#00ff6b" stroke-width="5" fill="transparent"
+                            r="50" cx="60" cy="60" style="transform: rotate(-90deg); transform-origin: 50% 50%;"/>
+
+                        <text x="50%" y="50%" text-anchor="middle" class="progress-text">
+                            <tspan x="50%" dy="-0.3em" id="percantage-easy">__/__</tspan> <!-- First line -->
+                            <tspan x="50%" dy="1.2em" id="easy">Easy</tspan> <!-- Second line -->
+                        </text>
+
+                    </svg>
+                </div>
+
+                <!-- medium -->
+                <div class="progress-left">
+                    <svg class="progress-ring" width="120" height="120">
+
+                        <circle class="progress-ring-medium-back" stroke="#fff096" stroke-width="5" fill="transparent"
+                            r="50" cx="60" cy="60" />
+                        <circle class="progress-ring-medium" stroke="#ff7f00" stroke-width="5" fill="transparent"
+                            r="50" cx="60" cy="60" style="transform: rotate(-90deg); transform-origin: 50% 50%;"/>
+
+                        <text x="50%" y="50%" text-anchor="middle" class="progress-text">
+                            <tspan x="50%" dy="-0.3em" id="percantage-medium">__/__</tspan> <!-- First line -->
+                            <tspan x="50%" dy="1.2em" id="medium">Medium</tspan> <!-- Second line -->
+                        </text>
+
+                    </svg>
+                </div>
+
+                <!-- hard -->
+                <div class="progress-left">
+                    <svg class="progress-ring" width="120" height="120">
+
+                        <circle class="progress-ring-hard-back" stroke="#fa877f" stroke-width="5" fill="transparent"
+                            r="50" cx="60" cy="60" />
+                        <circle class="progress-ring-hard" stroke="red" stroke-width="5" fill="transparent"
+                            r="50" cx="60" cy="60" style="transform: rotate(-90deg); transform-origin: 50% 50%;"/>
+
+                        <text x="50%" y="50%" text-anchor="middle" class="progress-text">
+                            <tspan x="50%" dy="-0.3em" id="percantage-hard">__/__</tspan> <!-- First line -->
+                            <tspan x="50%" dy="1.2em" id="hard">Hard</tspan> <!-- Second line -->
+                        </text>
+
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- other stats -->
+        <div class="other-stats">
+            <div class="cards">
+                <span>Total</span>
+                <span id="update-total">__/__</span>
+            </div>
+
+            <div class="cards easy">
+                <span>Easy</span>
+                <span id="update-total">__/__</span>
+            </div>
+
+            <div class="cards medium">
+                <span>Medium</span>
+                <span id="update-total">__/__</span>
+            </div>
+
+            <div  class="cards hard">
+                <span>Hard</span>
+                <span id="update-total">__/__</span>
+            </div>
+        </div>
+
+        <!-- rank-section  -->
+        <div class="rank-container">
+            <div class="rank cards">
+                <span>Rank :</span>
+                <span id="rank-text">000000</span>
+            </div>
+        </div>
 
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
