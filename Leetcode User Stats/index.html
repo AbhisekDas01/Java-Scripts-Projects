@@ -24,7 +24,7 @@
 
         <header class="name">
             <div class="name-display">
-                <h1>UserName</h1>
+                <h1 id="update-name">LeetCode User Stats</h1>
             </div>
         </header>
         <!-- stats circle section -->
@@ -43,7 +43,7 @@
                             r="72" cx="75" cy="75" style="transform: rotate(-90deg); transform-origin: 50% 50%;" />
 
                         <text x="50%" y="50%" text-anchor="middle" class="progress-text">
-                            <tspan x="50%" dy="-0.3em" id="percantage">0%</tspan> <!-- First line -->
+                            <tspan x="50%" dy="-0.3em" id="percantage">_ _%</tspan> <!-- First line -->
                             <tspan x="50%" dy="1.2em" id="Acc">Acceptance</tspan> <!-- Second line -->
                         </text>
 
@@ -65,7 +65,7 @@
                             r="50" cx="60" cy="60" style="transform: rotate(-90deg); transform-origin: 50% 50%;"/>
 
                         <text x="50%" y="50%" text-anchor="middle" class="progress-text">
-                            <tspan x="50%" dy="-0.3em" id="percantage-easy">__/__</tspan> <!-- First line -->
+                            <tspan x="50%" dy="-0.3em" id="percantage-easy">_ _%</tspan> <!-- First line -->
                             <tspan x="50%" dy="1.2em" id="easy">Easy</tspan> <!-- Second line -->
                         </text>
 
@@ -82,7 +82,7 @@
                             r="50" cx="60" cy="60" style="transform: rotate(-90deg); transform-origin: 50% 50%;"/>
 
                         <text x="50%" y="50%" text-anchor="middle" class="progress-text">
-                            <tspan x="50%" dy="-0.3em" id="percantage-medium">__/__</tspan> <!-- First line -->
+                            <tspan x="50%" dy="-0.3em" id="percantage-medium">_ _%</tspan> <!-- First line -->
                             <tspan x="50%" dy="1.2em" id="medium">Medium</tspan> <!-- Second line -->
                         </text>
 
@@ -99,7 +99,7 @@
                             r="50" cx="60" cy="60" style="transform: rotate(-90deg); transform-origin: 50% 50%;"/>
 
                         <text x="50%" y="50%" text-anchor="middle" class="progress-text">
-                            <tspan x="50%" dy="-0.3em" id="percantage-hard">__/__</tspan> <!-- First line -->
+                            <tspan x="50%" dy="-0.3em" id="percantage-hard">_ _%</tspan> <!-- First line -->
                             <tspan x="50%" dy="1.2em" id="hard">Hard</tspan> <!-- Second line -->
                         </text>
 
@@ -110,7 +110,7 @@
         </div>
 
         <!-- other stats -->
-        <div class="other-stats">
+        <div class="other-stats" style="display: none;">
             <div class="cards">
                 <span>Total</span>
                 <span id="update-total">__/__</span>
@@ -118,22 +118,22 @@
 
             <div class="cards easy">
                 <span>Easy</span>
-                <span id="update-total">__/__</span>
+                <span id="update-easy">__/__</span>
             </div>
 
             <div class="cards medium">
                 <span>Medium</span>
-                <span id="update-total">__/__</span>
+                <span id="update-medium">__/__</span>
             </div>
 
             <div  class="cards hard">
                 <span>Hard</span>
-                <span id="update-total">__/__</span>
+                <span id="update-hard">__/__</span>
             </div>
         </div>
 
         <!-- rank-section  -->
-        <div class="rank-container">
+        <div class="rank-container" style="display: none;">
             <div class="rank cards">
                 <span>Rank :</span>
                 <span id="rank-text">000000</span>
