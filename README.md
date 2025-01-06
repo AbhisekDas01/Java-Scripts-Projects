@@ -10,11 +10,12 @@ This repository contains a collection of small JavaScript projects. Each project
 1. **Project 1: Countdown Timer**
    - A countdown timer that allows users to input a specific time duration and counts down to zero, displaying the remaining time in days, hours, minutes, and seconds.
 
-2. **Project 2: Leetcode user Stats**
+2. **Project 2: Leetcode User Stats**
    - A web application that fetches and displays user statistics from LeetCode, including total questions solved, acceptance rate, and ranking. It also shows the percentage of easy, medium, and hard questions solved.
+
+3. **Project 3: Weather App**
+   - upcomming
 
 ## Getting Started
 
 To get started with any of the projects, clone the repository and navigate to the project directory.
-
-
