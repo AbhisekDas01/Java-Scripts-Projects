@@ -3,8 +3,6 @@
 This repository contains a collection of small JavaScript projects. Each project is designed to demonstrate different aspects of JavaScript programming and web development.
 
 
-## Visit all projects
-You can also view the projects live [here](https://abhisekdas01.github.io/Java-Scripts-Projects/).
 
 
 ## Projects
@@ -13,7 +11,7 @@ You can also view the projects live [here](https://abhisekdas01.github.io/Java-S
    - A countdown timer that allows users to input a specific time duration and counts down to zero, displaying the remaining time in days, hours, minutes, and seconds.
 
 2. **Project 2: Leetcode user Stats**
-   - upcomming
+   - A web application that fetches and displays user statistics from LeetCode, including total questions solved, acceptance rate, and ranking. It also shows the percentage of easy, medium, and hard questions solved.
 
 ## Getting Started
 
