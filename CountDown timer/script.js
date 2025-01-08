@@ -1,6 +1,7 @@
 // const endDate = new Date("1 January, 2025 1:58:00").getTime();
 
-
+//title bar
+const title = document.getElementById("update-title");
 
 let x;
 let givenTime;
@@ -58,6 +59,7 @@ function myTimer(startDate, endDate) {
 
     if (distancePending < 0) {
         clearInterval(x);
+        title.innerHTML = "Times Up!";
         document.querySelector(".countdown").innerHTML = "Times Up!";
         document.querySelector(".countdown").style.fontSize = "15vw";
         document.querySelector(".countdown").style.fontWeight = "bold";
@@ -72,11 +74,12 @@ function myTimer(startDate, endDate) {
     let paintMinutes = Math.floor((distancePending % (60 * 60 * 1000)) / (60 * 1000));
     let paintSeconds = Math.floor((distancePending % (60 * 1000)) / 1000);
 
-    document.getElementById('days').innerHTML = paintDay >= 10 ? paintDay : "0" + paintDay;
-    document.getElementById('hours').innerHTML = paintHours >= 10 ? paintHours : "0" + paintHours;
-    document.getElementById('mins').innerHTML = paintMinutes >= 10 ? paintMinutes : "0" + paintMinutes;
-    document.getElementById('seconds').innerHTML = paintSeconds >= 10 ? paintSeconds : "0" + paintSeconds;
+    document.getElementById('days').innerHTML = paintDay = paintDay >= 10 ? paintDay : "0" + paintDay;
+    document.getElementById('hours').innerHTML = paintHours = paintHours >= 10 ? paintHours : "0" + paintHours;
+    document.getElementById('mins').innerHTML = paintMinutes = paintMinutes >= 10 ? paintMinutes : "0" + paintMinutes;
+    document.getElementById('seconds').innerHTML = paintSeconds = paintSeconds >= 10 ? paintSeconds : "0" + paintSeconds;
 
+    title.innerHTML = `${paintDay} : ${paintHours} : ${paintMinutes} : ${paintSeconds}`;
     //progress bar 
     const totalDistance = endDate - startDate
 
@@ -95,6 +98,8 @@ resetBtn.addEventListener('click' , () =>{
 
 
     clearInterval(x);
+
+    title.innerHTML = "Countdown Timer";
     document.querySelector('.progress').style.width = "0%";
 
     // document.getElementById("days-input").placeholder = '00';
