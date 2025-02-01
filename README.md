@@ -14,7 +14,7 @@ This repository contains a collection of small JavaScript projects. Each project
    - A web application that fetches and displays user statistics from LeetCode, including total questions solved, acceptance rate, and ranking. It also shows the percentage of easy, medium, and hard questions solved.
 
 3. **Project 3: Weather App**
-   - upcomming
+   - A weather application that fetches and displays weather data for a specified location. It includes features such as current weather conditions, a 5-day weather forecast, air quality index, and hourly weather updates. Users can search for weather information by city name or use their current location.
 
 ## Getting Started
 
