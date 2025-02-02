@@ -11,11 +11,12 @@ const api_key = '7c2a5a7eecbfe599be281587425f9cf9';
  * @param {Function} callback callback function
  */
 
-export const fetchData = function(URL , callback){
+export const fetchData = async function(URL , callback){
 
-    fetch(`${URL}&appid=${api_key}`)
-    .then(res => res.json()) //convert response into json
-    .then(data => callback(data)); //pass data do callback function
+    const response = await fetch(`${URL}&appid=${api_key}`)
+    const data = await response.json();
+    callback(data);
+
 }
 
 
