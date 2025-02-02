@@ -2,7 +2,7 @@
 'use strict';
 
 //api key
-const api_key = '7c2a5a7eecbfe599be281587425f9cf9';
+const api_key = '<api-key>';
 
 
 /**
