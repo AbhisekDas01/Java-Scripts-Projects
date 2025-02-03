@@ -3,7 +3,7 @@
 //importing this 2 functions form app.js
 import {updateWeather , error404} from "./app.js";
 
-const defaultLocation = "#/weather?lat=23.7644025&lon=90.389015";
+const defaultLocation = "#/weather?lat=28.6138954&lon=77.2090057";
 //defautLocation london
 
 //fetch current location of the system

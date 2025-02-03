@@ -2,7 +2,7 @@
 'use strict';
 
 //api key
-const api_key = '<api-key>';
+const api_key = '7c2a5a7eecbfe599be281587425f9cf9';
 
 
 /**
@@ -13,9 +13,13 @@ const api_key = '<api-key>';
 
 export const fetchData = async function(URL , callback){
 
-    const response = await fetch(`${URL}&appid=${api_key}`)
-    const data = await response.json();
-    callback(data);
+    // const response = await fetch(`${URL}&appid=${api_key}`)
+    // const data = await response.json();
+    // callback(data);
+
+    fetch(`${URL}&appid=${api_key}`)
+    .then(res => res.json())
+    .then(data => callback(data));
 
 }
 

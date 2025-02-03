@@ -1,0 +1,64 @@
+.lightMode {
+        /* Light Mode Colors */
+        --primary: #6B4EFF;
+        --on-primary: #FFFFFF;
+        --background: #F9F9F9;
+        --on-background: #1A1A1A;
+        --surface: #FFFFFF;
+        --on-surface: #333333;
+        --on-surface-variant: #666666;
+        --on-surface-variant-2: #999999;
+        --outline: #CCCCCC;
+        --bg-aqi-1: #DFFFD6;
+        --on-bg-aqi-1: #1F331F;
+        --bg-aqi-2: #FFF7D6;
+        --on-bg-aqi-2: #33311F;
+        --bg-aqi-3: #FFE5D6;
+        --on-bg-aqi-3: #332B1F;
+        --bg-aqi-4: #FFD6D6;
+        --on-bg-aqi-4: #331F1F;
+        --bg-aqi-5: #FFD6EB;
+        --on-bg-aqi-5: #331F29;
+        --white: hsl(0, 0%, 100%);
+        --white-alpha-4: hsla(0, 0%, 100%, 0.04);
+        --white-alpha-8: hsla(0, 0%, 100%, 0.08);
+        --black-alpha-10: hsla(0, 0%, 0%, 0.1);
+
+/* Light Mode Gradient Colors */
+        --gradient-1: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0.8) 65%, hsl(0, 0%, 100%) 100%);
+        --gradient-2: linear-gradient(180deg, hsla(0, 0%, 95%, 0) 0%, hsla(0, 0%, 95%, 0.8) 65%, hsl(0, 0%, 95%) 100%);
+
+
+        .logo img{
+                filter: invert(1);
+        }
+
+        .light-mode{
+                display: none;
+        }
+
+        .darkmode-btn{
+                display: flex;
+        }
+}
+
+
+
+.heading {
+        color: var(--on-surface);
+}
+
+.btn-primary{
+        cursor: pointer;
+}
+
+
+.darkmode-btn {
+        display: none;
+}
+
+.animation{
+
+        animation: Frames .3s ease;
+}
+
