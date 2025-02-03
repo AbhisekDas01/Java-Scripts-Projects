@@ -198,7 +198,7 @@ body {
 }
 
 .icon-btn{
-  background-color: var(--white-alpha-8);
+  background-color: var(--surface);
   width: 48px;
   height: 48px;
   display: grid;
@@ -1107,6 +1107,45 @@ article.container::before{
 
   .highlight-list{
     grid-template-columns: repeat(4 , 1fr);
+  }
+  
+}
+
+
+@media screen and (max-width:400px){
+
+  .header-actions{
+    gap: 10px;
+  }
+
+  .logo img{
+    width: 120px;
+  }
+
+  .m-icon{
+    font-size: 1.6rem;
+  }
+
+  .icon-btn{
+    height: 40px;
+    width: 40px;
+  }
+
+  .btn-primary{
+    height: 40px;
+  }
+
+  .darkmode-container svg{
+    width: 17px;
+    height: 17px;
+  }
+  
+}
+
+@media screen and (max-width:300px){
+
+  .darkmode-container{
+    display: none;
   }
   
 }
