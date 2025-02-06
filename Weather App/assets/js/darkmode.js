@@ -27,20 +27,21 @@ else {
     // const darkModeBtn = document.querySelector(".darkmode-btn");
 
 
-    const modeSwitch = document.querySelector(".darkmode-container");
-
-    modeSwitch.addEventListener ("click", function () {
-        document.body.classList.toggle('lightMode');
-
-        if(document.body.classList.contains('lightMode'))
-        {
-            localStorage.setItem('color-profile' , 'light' );
-        }
-        else
-        {
-            localStorage.setItem('color-profile' , 'dark' );
-        }
-
-    })
 
 }
+
+const modeSwitch = document.querySelector(".darkmode-container");
+
+modeSwitch.addEventListener ("click", function () {
+    document.body.classList.toggle('lightMode');
+
+    if(document.body.classList.contains('lightMode'))
+    {
+        localStorage.setItem('color-profile' , 'light' );
+    }
+    else
+    {
+        localStorage.setItem('color-profile' , 'dark' );
+    }
+
+});
