@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
             otherStats.style.display = 'none';
             rankContainer.style.display = 'none';
 
-            //update all the circles before researcing
+            // update all the circles before researcing
             updateProgressBar(acceptanceCircle , 0);
             updateProgressBar(easyCircle , 0);
             updateProgressBar(mediumCircle,0);
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const response = await fetch(url);
             
-            console.log(response);
+            
             if(!response.ok)
             {
                 throw new Error("Unable to fetch user Data!");  
